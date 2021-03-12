@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021.03.12 11:29:29.671,=C:\Users\stud\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021.03.12 11:30:04.878,C:\Users\stud\Documents\RAD Studio\Projects\View\Unit1.pas=C:\Users\stud\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021.03.12 11:30:04.878,C:\Users\stud\Documents\RAD Studio\Projects\View\Unit1.dfm=C:\Users\stud\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021.03.12 11:30:16.781,C:\Users\stud\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\stud\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021.03.12 11:30:51.361,=C:\Users\stud\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021.03.12 11:31:34.893,C:\Users\stud\Documents\RAD Studio\Projects\Model\USales.pas=C:\Users\stud\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>
