@@ -86,7 +86,39 @@
 				<Form>Form1</Form>
 				<FormType>dfm</FormType>
 			</DCCReference>
-			<DCCReference Include="Model\USales.pas"/>
+			<DCCReference Include="Model\USale.pas"/>
+			<DCCReference Include="Model\USalesLineItem.pas"/>
+			<DCCReference Include="Model\ULedger.pas"/>
+			<DCCReference Include="Model\UProductCatalog.pas"/>
+			<DCCReference Include="Model\UProductDescription.pas"/>
+			<DCCReference Include="Model\UItem.pas"/>
+			<DCCReference Include="Model\UStore.pas"/>
+			<DCCReference Include="Model\URegister.pas"/>
+			<DCCReference Include="Model\UCashPayment.pas"/>
+			<DCCReference Include="Model\UCustomer.pas"/>
+			<DCCReference Include="Model\UCashier.pas"/>
+			<DCCReference Include="Model\UPayment.pas"/>
+			<DCCReference Include="Model\UMoney.pas"/>
+			<None Include="ModelSupport_Project1\default.txaPackage"/>
+			<None Include="ModelSupport_Project1\default.txvpck"/>
+			<None Include="ModelSupport_Project1\Unit1\default.txvpck"/>
+			<None Include="ModelSupport_Project1\Project1\default.txvpck"/>
+			<None Include="ModelSupport_Project1\Unit1\default.txaPackage"/>
+			<None Include="ModelSupport_Project1\UCashier\default.txvpck"/>
+			<None Include="ModelSupport_Project1\UCashPayment\default.txvpck"/>
+			<None Include="ModelSupport_Project1\UCustomer\default.txvpck"/>
+			<None Include="ModelSupport_Project1\UItem\default.txvpck"/>
+			<None Include="ModelSupport_Project1\ULedger\default.txvpck"/>
+			<None Include="ModelSupport_Project1\UProductCatalog\default.txvpck"/>
+			<None Include="ModelSupport_Project1\UProductDescription\default.txvpck"/>
+			<None Include="ModelSupport_Project1\URegister\default.txvpck"/>
+			<None Include="ModelSupport_Project1\USale\default.txvpck"/>
+			<None Include="ModelSupport_Project1\USalesLineItem\default.txvpck"/>
+			<None Include="ModelSupport_Project1\UStore\default.txvpck"/>
+			<None Include="ModelSupport_Project1\UPayment\default.txaPackage"/>
+			<None Include="ModelSupport_Project1\UPayment\default.txvpck"/>
+			<None Include="ModelSupport_Project1\UMoney\default.txaPackage"/>
+			<None Include="ModelSupport_Project1\UMoney\default.txvpck"/>
 			<BuildConfiguration Include="Release">
 				<Key>Cfg_2</Key>
 				<CfgParent>Base</CfgParent>
@@ -140,6 +172,7 @@
 					<Platform value="Win64">False</Platform>
 					<Platform value="Win32">True</Platform>
 				</Platforms>
+				<ModelSupport>True</ModelSupport>
 			</BorlandProject>
 			<ProjectFileVersion>12</ProjectFileVersion>
 		</ProjectExtensions>

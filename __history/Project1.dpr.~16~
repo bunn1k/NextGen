@@ -14,8 +14,7 @@ uses
   UCashPayment in 'Model\UCashPayment.pas',
   UCustomer in 'Model\UCustomer.pas',
   UCashier in 'Model\UCashier.pas',
-  UPayment in 'Model\UPayment.pas',
-  UMoney in 'Model\UMoney.pas';
+  UPayment in 'Model\UPayment.pas';
 
 {$R *.res}
 

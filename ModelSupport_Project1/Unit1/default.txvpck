@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="6x0il0yqiwk_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Project1:Unit1.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:Project1:Unit1.@unitclass.Form1" />
+      <reference referencedUin="delphi:l_ast:src:Project1:Unit1.@unitclass.Form1" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:Unit1.TForm1">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,89,81" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:UCashier.Cashier">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="120,20,116,67" />
+      <property name="location_set_by_user" value="True" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:UCashPayment.CashPayment">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="120,100,188,67" />
+      <property name="location_set_by_user" value="True" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:UCustomer.Customer">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="120,180,138,67" />
+      <property name="location_set_by_user" value="True" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:UItem.Item">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="120,260,86,67" />
+      <property name="location_set_by_user" value="True" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:ULedger.Ledger">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="120,340,107,67" />
+      <property name="location_set_by_user" value="True" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:UProductCatalog.ProductCatalog">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="120,420,205,67" />
+      <property name="location_set_by_user" value="True" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:UProductDescription.ProductDescription">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="120,500,245,67" />
+      <property name="location_set_by_user" value="True" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:URegister.Regicter">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="120,580,123,67" />
+      <property name="location_set_by_user" value="True" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:USale.Sale">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="120,660,86,67" />
+      <property name="location_set_by_user" value="True" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:USalesLineItem.SalesLineItem">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="120,740,191,67" />
+      <property name="location_set_by_user" value="True" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:UStore.Store">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="120,820,89,67" />
+      <property name="location_set_by_user" value="True" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:UPayment.Payment">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="380,20,128,116" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_field:src:Project1:UPayment.Payment.amount" />
+      <reference referencedUin="delphi:e_method:src:Project1:UPayment.Payment.Payment(UMoney.Money)" />
+      <reference referencedUin="delphi:e_method:src:Project1:UPayment.Payment.getAmount()" />
+      <reference referencedUin="delphi:l_ast:src:Project1:UPayment.Payment.amount">
+        <property name="sourceAnchor" value="432,136" />
+        <property name="targetAnchor" value="432,160" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:UMoney.Money">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="380,160,104,67" />
+      <property name="location_set_by_user" value="True" />
+    </reference>
+  </view>
+</nodeSet>

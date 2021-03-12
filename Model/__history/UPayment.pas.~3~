@@ -1,0 +1,26 @@
+unit UPayment;
+
+interface
+ type
+ Payment = class
+ private
+ amount : Money;
+ public
+ procedure Payment(cashTendere:Money);
+ function getAmount():Money;
+ end;
+implementation
+
+{ Payment }
+
+function Payment.getAmount: Money;
+begin
+  result := amount;
+end;
+
+procedure Payment.Payment(cashTendere: Money);
+begin
+ amount := cashTendered;
+end;
+
+end.

@@ -11,11 +11,7 @@ uses
   UItem in 'Model\UItem.pas',
   UStore in 'Model\UStore.pas',
   URegister in 'Model\URegister.pas',
-  UCashPayment in 'Model\UCashPayment.pas',
-  UCustomer in 'Model\UCustomer.pas',
-  UCashier in 'Model\UCashier.pas',
-  UPayment in 'Model\UPayment.pas',
-  UMoney in 'Model\UMoney.pas';
+  UCashPayment in 'Model\UCashPayment.pas';
 
 {$R *.res}
 
