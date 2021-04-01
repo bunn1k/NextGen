@@ -1,0 +1,10 @@
+unit UItemID;
+
+interface
+type
+ ItemID = class
+
+ end;
+implementation
+
+end.

@@ -1,0 +1,18 @@
+unit UProductCatalog;
+
+interface
+
+uses
+  System.Generics.Collections, UItem;
+
+type
+  ProductCatalog = class
+  private
+    Map: TDictionary<ItemID, ProductDescription>;
+  public
+
+  end;
+
+implementation
+
+end.

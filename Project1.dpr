@@ -8,7 +8,7 @@ uses
   ULedger in 'Model\ULedger.pas',
   UProductCatalog in 'Model\UProductCatalog.pas',
   UProductDescription in 'Model\UProductDescription.pas',
-  UItem in 'Model\UItem.pas',
+  UItemID in 'Model\UItemID.pas',
   UStore in 'Model\UStore.pas',
   URegister in 'Model\URegister.pas',
   UCashPayment in 'Model\UCashPayment.pas',

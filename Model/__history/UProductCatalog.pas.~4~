@@ -1,0 +1,13 @@
+unit UProductCatalog;
+
+interface
+ type
+ ProductCatalog = class
+ private
+
+ public
+
+ end;
+implementation
+
+end.

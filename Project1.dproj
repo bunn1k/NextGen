@@ -91,7 +91,7 @@
 			<DCCReference Include="Model\ULedger.pas"/>
 			<DCCReference Include="Model\UProductCatalog.pas"/>
 			<DCCReference Include="Model\UProductDescription.pas"/>
-			<DCCReference Include="Model\UItem.pas"/>
+			<DCCReference Include="Model\UItemID.pas"/>
 			<DCCReference Include="Model\UStore.pas"/>
 			<DCCReference Include="Model\URegister.pas"/>
 			<DCCReference Include="Model\UCashPayment.pas"/>

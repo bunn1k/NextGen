@@ -4,14 +4,15 @@ interface
 
 uses UMoney;
 
- type
- Payment = class
- private
- amount : Money;
- public
- procedure Payment(cashTendered:Money);
- function getAmount():Money;
- end;
+type
+  Payment = class
+  private
+    amount: Money;
+  public
+    procedure Payment(cashTendered: Money);
+    function getAmount(): Money;
+  end;
+
 implementation
 
 { Payment }
@@ -23,7 +24,7 @@ end;
 
 procedure Payment.Payment(cashTendered: Money);
 begin
- amount := cashTendered;
+  amount := cashTendered;
 end;
 
 end.
