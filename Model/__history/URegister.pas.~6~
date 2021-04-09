@@ -1,0 +1,42 @@
+unit URegister;
+
+interface
+
+uses UItemID, UProductCatalog, USale, UMoney;
+
+ type
+ Regicter = class
+ private
+   catalog:ProductCatalog;
+   currentSale:Sale;
+ public
+   procedure endSale();
+   procedure enterItem(id:ItemID; quantity:integer);
+   procedure makeNewSale();
+   procedure makePayment(cashTendered:Money);
+ end;
+implementation
+
+{ Regicter }
+
+procedure Regicter.endSale;
+begin
+  currentSale
+end;
+
+procedure Regicter.enterItem(id: ItemID; quantity: integer);
+begin
+
+end;
+
+procedure Regicter.makeNewSale;
+begin
+
+end;
+
+procedure Regicter.makePayment(cashTendered: Money);
+begin
+
+end;
+
+end.
