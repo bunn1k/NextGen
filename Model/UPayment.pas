@@ -9,7 +9,7 @@ type
   private
     amount: Money;
   public
-    procedure Payment(cashTendered: Money);
+    constructor Create(cashTendered: Money);
     function getAmount(): Money;
   end;
 
@@ -22,7 +22,7 @@ begin
   result := amount;
 end;
 
-procedure Payment.Payment(cashTendered: Money);
+constructor Payment.Create(cashTendered: Money);
 begin
   amount := cashTendered;
 end;

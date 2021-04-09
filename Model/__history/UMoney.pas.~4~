@@ -1,0 +1,23 @@
+unit UMoney;
+
+interface
+type
+  Money = class
+    constructor Create(value:integer);
+    procedure add(subtotal:);
+  end;
+implementation
+
+{ Money }
+
+procedure Money.add(subtotal);
+begin
+
+end;
+
+constructor Money.Create(value: integer);
+begin
+
+end;
+
+end.

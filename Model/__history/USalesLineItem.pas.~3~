@@ -1,0 +1,14 @@
+unit USalesLineItem;
+
+interface
+
+uses UProductDescription, UMoney;
+
+ type
+ SalesLineItem = class
+   function getSubtotal():Money;
+   constructor Create(desc:ProductDescription; quatity:integer);
+ end;
+implementation
+
+end.

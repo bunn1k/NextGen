@@ -1,0 +1,13 @@
+unit UDate;
+
+interface
+
+type
+  Date = class
+  private
+  public
+  end;
+
+implementation
+
+end.

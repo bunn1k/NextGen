@@ -1,0 +1,45 @@
+unit USale;
+
+interface
+
+uses UProductDescription, UMoney, UPayment, UDate, USalesLineItem,  System.SysUtils, System.Generics.Defaults,
+   System.Generics.Collections, System.Types;
+
+ type
+ Sale = class
+ private
+   lineItems:TList <SalesLineItem>;
+   date:Date;
+   payment:Payment;
+ public
+   function getBalance(): Money;
+   function getTotal(): Money;
+   procedure becomeComplete();
+   procedure makeLineItem(desc:ProductDescription; quantity:integer);
+   procedure makePayment(cashTendered:Money);
+ end;
+implementation
+
+{ Sale }
+
+procedure Sale.becomeComplete;
+begin
+
+end;
+
+function Sale.getBalance: Money;
+begin
+  result:=payment.getAmount().;
+end;
+
+procedure Sale.makeLineItem(desc: ProductDescription; quantity: integer);
+begin
+
+end;
+
+procedure Sale.makePayment(cashTendered: Money);
+begin
+
+end;
+
+end.

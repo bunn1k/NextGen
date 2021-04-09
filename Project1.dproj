@@ -99,6 +99,7 @@
 			<DCCReference Include="Model\UCashier.pas"/>
 			<DCCReference Include="Model\UPayment.pas"/>
 			<DCCReference Include="Model\UMoney.pas"/>
+			<DCCReference Include="Model\UDate.pas"/>
 			<None Include="ModelSupport_Project1\default.txaPackage"/>
 			<None Include="ModelSupport_Project1\default.txvpck"/>
 			<None Include="ModelSupport_Project1\Unit1\default.txvpck"/>
