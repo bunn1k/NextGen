@@ -1,0 +1,30 @@
+unit UStore;
+
+interface
+
+ uses UProductCatalog, URegister;
+
+ type
+ TStore = class
+ private
+   catalog:TProductCatalog;
+   regicter:TRegicter;
+ public
+   constructor Create();
+   function getRegister(): TRegicter;
+ end;
+implementation
+
+{ Store }
+
+constructor TStore.Create;
+begin
+
+end;
+
+function TStore.getRegister: TRegicter;
+begin
+  result:=regicter;
+end;
+
+end.

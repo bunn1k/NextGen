@@ -2,4 +2,5 @@
 <TgConfig Version="3" SubLevelDisabled="False">
   <Option Name="namespaceFolder.Unit1" Type="System.String" Value="Unit1" Category="General" IsBrowsable="False" />
   <Option Name="namespaceFolder.UPayment" Type="System.String" Value="Model" Category="General" IsBrowsable="False" />
+  <Option Name="namespaceFolder.UStore" Type="System.String" Value="UStore" Category="General" IsBrowsable="False" />
 </TgConfig>

@@ -1,0 +1,34 @@
+unit UFasad;
+
+interface
+
+uses UStore;
+
+type
+  IFasad = interface
+    procedure getStore();
+  end;
+
+  TFasad = class(TInterfacedObject, IFasad)
+  private
+    store: TStore;
+  public
+    procedure getStore();
+    constructor Create();
+  end;
+
+implementation
+
+{ TFasad }
+
+constructor TFasad.Create;
+begin
+
+end;
+
+procedure TFasad.getStore;
+begin
+
+end;
+
+end.

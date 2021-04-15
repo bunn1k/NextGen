@@ -1,0 +1,24 @@
+unit UFasad;
+
+interface
+
+uses UStore;
+
+type
+  TFasad = class
+  private
+
+  public
+    procedure getStore();
+  end;
+
+implementation
+
+{ TFasad }
+
+procedure TFasad.getStore;
+begin
+
+end;
+
+end.

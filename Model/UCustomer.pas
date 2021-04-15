@@ -2,7 +2,7 @@ unit UCustomer;
 
 interface
 type
- Customer = class
+ TCustomer = class
 
  end;
 implementation

@@ -3,45 +3,50 @@ unit USale;
 interface
 
 uses UProductDescription, UMoney, UPayment, UDate, USalesLineItem,
-  System.SysUtils, System.Generics.Defaults,
-  System.Generics.Collections, System.Types;
+  System.SysUtils, System.Generics.Defaults, System.Generics.Collections, System.Types;
 
 type
-  Sale = class
+  TSale = class
   private
-    lineItems: TList<SalesLineItem>;
-    date:Date;
+    lineItems: TList<TSalesLineItem>;
+    date: TDate;
     isComplete: boolean;
-    payment: Payment;
+    payment: TPayment;
   public
-    function getBalance(): Money;
-    function getTotal(): Money;
+    function getBalance(): TMoney;
+    function getTotal(): TMoney;
     procedure becomeComplete();
-    procedure makeLineItem(desc: ProductDescription; quantity: integer);
-    procedure makePayment(cashTendered: Money);
+    procedure makeLineItem(desc: TProductDescription; quantity: integer);
+    procedure makePayment(cashTendered: TMoney);
+    constructor Create();
   end;
 
 implementation
 
 { Sale }
 
-procedure Sale.becomeComplete;
+procedure TSale.becomeComplete;
 begin
   isComplete := True;
 end;
 
-function Sale.getBalance: Money;
+constructor TSale.Create;
+begin
+  date:=TDate.Create;
+end;
+
+function TSale.getBalance: TMoney;
 begin
   result := payment.getAmount().minus(getTotal());
 end;
 
-function Sale.getTotal: Money;
+function TSale.getTotal: TMoney;
 var
-  total, subtotal: Money;
-  lineItem: SalesLineItem;
+  total, subtotal: TMoney;
+  lineItem: TSalesLineItem;
 begin
-  total := Money.Create(0);
-  subtotal := Money.Create(0);
+  total := TMoney.Create(0);
+  subtotal := TMoney.Create(0);
   for lineItem in lineItems do
   begin
     subtotal := lineItem.getSubtotal();
@@ -50,12 +55,12 @@ begin
   result := total;
 end;
 
-procedure Sale.makeLineItem(desc: ProductDescription; quantity: integer);
+procedure TSale.makeLineItem(desc: TProductDescription; quantity: integer);
 begin
-  lineItems.add(SalesLineItem.Create(desc, quantity))
+  lineItems.add(TSalesLineItem.Create(desc, quantity))
 end;
 
-procedure Sale.makePayment(cashTendered: Money);
+procedure TSale.makePayment(cashTendered: TMoney);
 begin
   payment := payment.Create(cashTendered);
 end;

@@ -1,0 +1,30 @@
+unit UPayment;
+
+interface
+
+uses UMoney;
+
+type
+  TPayment = class
+  private
+    amount: TMoney;
+  public
+    constructor Create(cashTendered: TMoney);
+    function getAmount(): TMoney;
+  end;
+
+implementation
+
+{ Payment }
+
+function TPayment.getAmount: TMoney;
+begin
+  result := amount;
+end;
+
+constructor TPayment.Create(cashTendered: TMoney);
+begin
+  amount := cashTendered;
+end;
+
+end.

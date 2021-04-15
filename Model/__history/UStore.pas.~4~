@@ -1,0 +1,21 @@
+unit UStore;
+
+interface
+ type
+ TStore = class
+ private
+
+ public
+   constructor Create();
+
+ end;
+implementation
+
+{ Store }
+
+constructor TStore.Create;
+begin
+
+end;
+
+end.

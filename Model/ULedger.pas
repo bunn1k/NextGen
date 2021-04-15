@@ -2,7 +2,7 @@ unit ULedger;
 
 interface
  type
- Ledger = class
+ TLedger = class
 
  end;
 implementation

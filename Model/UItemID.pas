@@ -2,7 +2,7 @@ unit UItemID;
 
 interface
 type
- ItemID = class
+ TItemID = class
 
  public
     constructor Create(id:integer);
@@ -11,7 +11,7 @@ implementation
 
 { ItemID }
 
-constructor ItemID.Create(id: integer);
+constructor TItemID.Create(id: integer);
 begin
 
 end;

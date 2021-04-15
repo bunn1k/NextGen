@@ -2,7 +2,7 @@ unit UDate;
 
 interface
 type
-  Date = class
+  TDate = class
   end;
 
 implementation

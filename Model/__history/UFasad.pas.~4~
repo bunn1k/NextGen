@@ -1,0 +1,24 @@
+unit UFasad;
+
+interface
+
+uses URegister;
+
+type
+  TFasad = class
+  private
+    regicter:TRegicter;
+  public
+    function getRegicter():TRegicter;
+  end;
+
+implementation
+
+{ TFasad }
+
+function TFasad.getRegicter: TRegicter;
+begin
+  result:=regicter;
+end;
+
+end.

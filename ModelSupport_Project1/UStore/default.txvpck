@@ -4,5 +4,21 @@
     <property name="$defaultDiagram" value="true" />
     <property name="$metaclass" value="Package Diagram" />
     <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Project1:UStore.TStore">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,86,84" />
+      <reference referencedUin="delphi:e_method:src:Project1:UStore.TStore.Create()" />
+      <reference referencedUin="delphi:e_field:src:Project1:UStore.TStore.catalog" />
+      <reference referencedUin="delphi:e_field:src:Project1:UStore.TStore.regicter" />
+      <reference referencedUin="delphi:e_method:src:Project1:UStore.TStore.getRegister()" />
+      <reference referencedUin="delphi:l_impl:src:Project1:UStore.TStore:UStore.IStore" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:UStore.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:UStore.IStore">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_method:src:Project1:UStore.IStore.getRegister()" />
+    </reference>
   </view>
 </nodeSet>

@@ -5,44 +5,52 @@ interface
 uses UItemID, UProductCatalog, USale, UMoney, UProductDescription;
 
  type
- Regicter = class
- private
-   catalog:ProductCatalog;
-   currentSale:Sale;
- public
-   procedure endSale();
-   procedure enterItem(id:ItemID; quantity:integer);
-   procedure makeNewSale();
-   procedure makePayment(cashTendered:Money);
-   constructor Create(catalog:ProductCatalog);
- end;
+   IRegicter = interface
+    procedure endSale();
+    procedure enterItem(id: TItemID; quantity: integer);
+    procedure makeNewSale();
+    procedure makePayment(cashTendered: TMoney);
+  end;
+
+  TRegicter = class(TInterfacedObject, IRegicter)
+  private
+    catalog: TProductCatalog;
+    currentSale: TSale;
+  public
+    procedure endSale();
+    procedure enterItem(id: TItemID; quantity: integer);
+    procedure makeNewSale();
+    procedure makePayment(cashTendered: TMoney);
+    constructor Create(catalog: TProductCatalog);
+  end;
+
 implementation
 
 { Regicter }
 
-constructor Regicter.Create(catalog: ProductCatalog);
+constructor TRegicter.Create(catalog: TProductCatalog);
 begin
   Self.catalog:=catalog;
 end;
 
-procedure Regicter.endSale;
+procedure TRegicter.endSale;
 begin
   currentSale.becomeComplete();
 end;
 
-procedure Regicter.enterItem(id: ItemID; quantity: integer);
-var desc:ProductDescription;
+procedure TRegicter.enterItem(id: TItemID; quantity: integer);
+var desc:TProductDescription;
 begin
   desc:=catalog.getProductDescription(id);
   currentSale.makeLineItem(desc, quantity);
 end;
 
-procedure Regicter.makeNewSale;
+procedure TRegicter.makeNewSale;
 begin
-  currentSale:=Sale.Create;
+  currentSale:=TSale.Create;
 end;
 
-procedure Regicter.makePayment(cashTendered: Money);
+procedure TRegicter.makePayment(cashTendered: TMoney);
 begin
   currentSale.makePayment(cashTendered);
 end;

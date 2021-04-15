@@ -4,5 +4,110 @@
     <property name="$defaultDiagram" value="true" />
     <property name="$metaclass" value="Package Diagram" />
     <property name="$name" value="default" />
+    <reference referencedUin="design:view:::z3ptqudvp3f_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,101,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:UMoney.TMoney" />
+      <reference referencedUin="delphi:e_class:src:Project1:UMoney.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::ekialkm11yg_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="130,1,149,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:UProductCatalog.TProductCatalog" />
+      <reference referencedUin="delphi:e_class:src:Project1:UProductCatalog.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Project1:UProductCatalog.IProductCatalog" />
+    </reference>
+    <reference referencedUin="design:view:::amql3yn9s4l_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="130,171,110,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:URegister.TRegicter" />
+      <reference referencedUin="delphi:e_class:src:Project1:URegister.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Project1:URegister.IRegicter" />
+    </reference>
+    <reference referencedUin="design:view:::kojuynoalk_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="21,180,101,134" />
+      <reference referencedUin="delphi:e_class:src:Project1:Project1.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::sctn6zw9u7l_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="317,1,113,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:UPayment.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Project1:UPayment.TPayment" />
+      <reference referencedUin="delphi:e_class:src:Project1:UPayment.IPayment" />
+    </reference>
+    <reference referencedUin="design:view:::8w1qcyv6qlk_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="317,171,100,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:UDate.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Project1:UDate.TDate" />
+    </reference>
+    <reference referencedUin="design:view:::3ikofd7pqmq_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="317,341,118,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:UCustomer.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Project1:UCustomer.TCustomer" />
+    </reference>
+    <reference referencedUin="design:view:::g1jflypak2q_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="468,1,169,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:UProductDescription.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Project1:UProductDescription.TProductDescription" />
+    </reference>
+    <reference referencedUin="design:view:::y7omdsshsqp_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="208,360,102,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:ULedger.TLedger" />
+      <reference referencedUin="delphi:e_class:src:Project1:ULedger.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::258nw11mi0n_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="99,360,100,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:USale.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Project1:USale.TSale" />
+    </reference>
+    <reference referencedUin="design:view:::6x0il0yqiwk_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="473,171,100,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:Unit1.TForm1" />
+      <reference referencedUin="delphi:e_class:src:Project1:Unit1.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::3jd0ky41ufh_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="473,341,107,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:UCashier.TCashier" />
+      <reference referencedUin="delphi:e_class:src:Project1:UCashier.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::dubestbi5ie_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="473,511,100,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:UItemID.TItemID" />
+      <reference referencedUin="delphi:e_class:src:Project1:UItemID.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::t68bly893gn_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="675,1,142,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:USalesLineItem.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Project1:USalesLineItem.TSalesLineItem" />
+    </reference>
+    <reference referencedUin="design:view:::7apstdzh0wr_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="364,549,100,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:UStore.TStore" />
+      <reference referencedUin="delphi:e_class:src:Project1:UStore.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Project1:UStore.IStore" />
+    </reference>
+    <reference referencedUin="design:view:::nl0vh6ogxnl_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="675,171,142,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:UCashPayment.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Project1:UCashPayment.TCashPayment" />
+    </reference>
+    <reference referencedUin="design:view:::vom0ylhwzqp_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:Project1:UFasad.TFasad" />
+      <reference referencedUin="delphi:e_class:src:Project1:UFasad.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Project1:UFasad.IFasad" />
+    </reference>
   </view>
 </nodeSet>

@@ -1,0 +1,50 @@
+unit URegister;
+
+interface
+
+uses UItemID, UProductCatalog, USale, UMoney, UProductDescription;
+
+ type
+ Regicter = class
+ private
+   catalog:ProductCatalog;
+   currentSale:TSale;
+ public
+   procedure endSale();
+   procedure enterItem(id:TItemID; quantity:integer);
+   procedure makeNewSale();
+   procedure makePayment(cashTendered:TMoney);
+   constructor Create(catalog:ProductCatalog);
+ end;
+implementation
+
+{ Regicter }
+
+constructor Regicter.Create(catalog: ProductCatalog);
+begin
+  Self.catalog:=catalog;
+end;
+
+procedure Regicter.endSale;
+begin
+  currentSale.becomeComplete();
+end;
+
+procedure Regicter.enterItem(id: TItemID; quantity: integer);
+var desc:ProductDescription;
+begin
+  desc:=catalog.getProductDescription(id);
+  currentSale.makeLineItem(desc, quantity);
+end;
+
+procedure Regicter.makeNewSale;
+begin
+  currentSale:=TSale.Create;
+end;
+
+procedure Regicter.makePayment(cashTendered: TMoney);
+begin
+  currentSale.makePayment(cashTendered);
+end;
+
+end.

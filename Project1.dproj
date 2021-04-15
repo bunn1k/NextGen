@@ -100,6 +100,11 @@
 			<DCCReference Include="Model\UPayment.pas"/>
 			<DCCReference Include="Model\UMoney.pas"/>
 			<DCCReference Include="Model\UDate.pas"/>
+			<DCCReference Include="Model\UFasad.pas"/>
+			<DCCReference Include="View\Unit2.pas">
+				<Form>Form2</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
 			<None Include="ModelSupport_Project1\default.txaPackage"/>
 			<None Include="ModelSupport_Project1\default.txvpck"/>
 			<None Include="ModelSupport_Project1\Unit1\default.txvpck"/>
@@ -120,6 +125,10 @@
 			<None Include="ModelSupport_Project1\UPayment\default.txvpck"/>
 			<None Include="ModelSupport_Project1\UMoney\default.txaPackage"/>
 			<None Include="ModelSupport_Project1\UMoney\default.txvpck"/>
+			<None Include="ModelSupport_Project1\UDate\default.txvpck"/>
+			<None Include="ModelSupport_Project1\UItemID\default.txvpck"/>
+			<None Include="ModelSupport_Project1\UFasad\default.txvpck"/>
+			<None Include="ModelSupport_Project1\UFasad\default.txaPackage"/>
 			<BuildConfiguration Include="Release">
 				<Key>Cfg_2</Key>
 				<CfgParent>Base</CfgParent>

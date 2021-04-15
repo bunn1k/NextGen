@@ -5,20 +5,20 @@ interface
 uses UProductDescription, UMoney;
 
  type
- SalesLineItem = class
-   function getSubtotal():Money;
-   constructor Create(desc:ProductDescription; quatity:integer);
+ TSalesLineItem = class
+   function getSubtotal():TMoney;
+   constructor Create(desc:TProductDescription; quatity:integer);
  end;
 implementation
 
 { SalesLineItem }
 
-constructor SalesLineItem.Create(desc: ProductDescription; quatity: integer);
+constructor TSalesLineItem.Create(desc: TProductDescription; quatity: integer);
 begin
 
 end;
 
-function SalesLineItem.getSubtotal: Money;
+function TSalesLineItem.getSubtotal: TMoney;
 begin
 
 end;
