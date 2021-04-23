@@ -2,7 +2,7 @@ unit UFasad;
 
 interface
 
-uses UStore;
+uses URegister, UStore;
 
 type
   IFasad = interface

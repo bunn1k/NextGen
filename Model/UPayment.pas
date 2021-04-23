@@ -6,27 +6,27 @@ uses UMoney;
 
 type
   IPayment = interface
-    function getAmount(): TMoney;
+    function getAmount(): IMoney;
   end;
 
   TPayment = class(TInterfacedObject, IPayment)
   private
-    amount: TMoney;
+    amount: IMoney;
   public
-    constructor Create(cashTendered: TMoney);
-    function getAmount(): TMoney;
+    constructor Create(cashTendered: IMoney);
+    function getAmount(): IMoney;
   end;
 
 implementation
 
 { Payment }
 
-function TPayment.getAmount: TMoney;
+function TPayment.getAmount: IMoney;
 begin
   result := amount;
 end;
 
-constructor TPayment.Create(cashTendered: TMoney);
+constructor TPayment.Create(cashTendered: IMoney);
 begin
   amount := cashTendered;
 end;

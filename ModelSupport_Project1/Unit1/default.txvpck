@@ -11,7 +11,7 @@
     </reference>
     <reference referencedUin="delphi:e_class:src:Project1:Unit1.TForm1">
       <property name="$shortcutReference" value="true" />
-      <property name="bounds" value="40,40,112,160" />
+      <property name="bounds" value="40,40,112,175" />
       <property name="location_set_by_user" value="True" />
       <reference referencedUin="delphi:e_field:src:Project1:Unit1.TForm1.Edit1" />
       <reference referencedUin="delphi:e_field:src:Project1:Unit1.TForm1.Edit2" />
@@ -23,6 +23,7 @@
         <property name="targetAnchor" value="240,120" />
         <property name="bendpoints" value="" />
       </reference>
+      <reference referencedUin="delphi:e_method:src:Project1:Unit1.TForm1.Button1Click(System.TObject)" />
     </reference>
     <reference referencedUin="delphi:e_class:src:Project1:UCashier.Cashier">
       <property name="$shortcutReference" value="true" />
@@ -99,39 +100,39 @@
     </reference>
     <reference referencedUin="delphi:e_class:src:Project1:UStore.TStore">
       <property name="$shortcutReference" value="true" />
-      <property name="bounds" value="600,420,149,145" />
+      <property name="bounds" value="520,380,149,145" />
       <property name="location_set_by_user" value="True" />
       <reference referencedUin="delphi:e_method:src:Project1:UStore.TStore.Create()" />
       <reference referencedUin="delphi:e_field:src:Project1:UStore.TStore.catalog" />
       <reference referencedUin="delphi:e_field:src:Project1:UStore.TStore.regicter" />
       <reference referencedUin="delphi:e_method:src:Project1:UStore.TStore.getRegister()" />
       <reference referencedUin="delphi:l_impl:src:Project1:UStore.TStore:UStore.IStore">
-        <property name="sourceAnchor" value="673,420" />
-        <property name="targetAnchor" value="673,361" />
+        <property name="sourceAnchor" value="583,380" />
+        <property name="targetAnchor" value="583,301" />
         <property name="bendpoints" value="" />
       </reference>
     </reference>
     <reference referencedUin="delphi:e_class:src:Project1:UStore.IStore">
       <property name="$shortcutReference" value="true" />
-      <property name="bounds" value="600,280,147,81" />
+      <property name="bounds" value="500,220,147,81" />
       <property name="location_set_by_user" value="True" />
       <reference referencedUin="delphi:e_method:src:Project1:UStore.IStore.getRegister()" />
     </reference>
     <reference referencedUin="delphi:e_class:src:Project1:UFasad.TFasad">
       <property name="$shortcutReference" value="true" />
-      <property name="bounds" value="260,280,129,130" />
+      <property name="bounds" value="240,220,129,130" />
       <property name="location_set_by_user" value="True" />
       <reference referencedUin="delphi:e_method:src:Project1:UFasad.TFasad.getStore()" />
       <reference referencedUin="delphi:e_method:src:Project1:UFasad.TFasad.Create()" />
       <reference referencedUin="delphi:l_impl:src:Project1:UFasad.TFasad:UFasad.IFasad">
-        <property name="sourceAnchor" value="301,280" />
-        <property name="targetAnchor" value="301,161" />
+        <property name="sourceAnchor" value="291,220" />
+        <property name="targetAnchor" value="291,161" />
         <property name="bendpoints" value="" />
       </reference>
       <reference referencedUin="delphi:e_field:src:Project1:UFasad.TFasad.store" />
       <reference referencedUin="delphi:l_ast:src:Project1:UFasad.TFasad.store">
-        <property name="sourceAnchor" value="389,320" />
-        <property name="targetAnchor" value="600,320" />
+        <property name="sourceAnchor" value="369,260" />
+        <property name="targetAnchor" value="500,260" />
         <property name="bendpoints" value="" />
       </reference>
     </reference>

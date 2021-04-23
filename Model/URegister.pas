@@ -9,26 +9,26 @@ uses UItemID, UProductCatalog, USale, UMoney, UProductDescription;
     procedure endSale();
     procedure enterItem(id: TItemID; quantity: integer);
     procedure makeNewSale();
-    procedure makePayment(cashTendered: TMoney);
+    procedure makePayment(cashTendered: IMoney);
   end;
 
   TRegicter = class(TInterfacedObject, IRegicter)
   private
-    catalog: TProductCatalog;
-    currentSale: TSale;
+    catalog: IProductCatalog;
+    currentSale: ISale;
   public
     procedure endSale();
     procedure enterItem(id: TItemID; quantity: integer);
     procedure makeNewSale();
-    procedure makePayment(cashTendered: TMoney);
-    constructor Create(catalog: TProductCatalog);
+    procedure makePayment(cashTendered: IMoney);
+    constructor Create(catalog: IProductCatalog);
   end;
 
 implementation
 
 { Regicter }
 
-constructor TRegicter.Create(catalog: TProductCatalog);
+constructor TRegicter.Create(catalog: IProductCatalog);
 begin
   Self.catalog:=catalog;
 end;
@@ -39,7 +39,7 @@ begin
 end;
 
 procedure TRegicter.enterItem(id: TItemID; quantity: integer);
-var desc:TProductDescription;
+var desc:IProductDescription;
 begin
   desc:=catalog.getProductDescription(id);
   currentSale.makeLineItem(desc, quantity);
@@ -50,7 +50,7 @@ begin
   currentSale:=TSale.Create;
 end;
 
-procedure TRegicter.makePayment(cashTendered: TMoney);
+procedure TRegicter.makePayment(cashTendered: IMoney);
 begin
   currentSale.makePayment(cashTendered);
 end;
