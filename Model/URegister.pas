@@ -1,30 +1,30 @@
 unit URegister;
 
 interface
+  uses UItemID, UProductCatalog, USale, UMoney, UProductDescription;
+type
+  IRegicter = interface
+      procedure endSale();
+      procedure enterItem(id: TItemID; quantity: integer);
+      procedure makeNewSale();
+      procedure makePayment(cashTendered: IMoney);
+    end;
 
-uses UItemID, UProductCatalog, USale, UMoney, UProductDescription;
+    TRegicter = class(TInterfacedObject, IRegicter)
+    private
+      /// <link>aggregation</link>
+      catalog: IProductCatalog;
+      /// <link>aggregation</link>
+      currentSale: ISale;
+    public
+      procedure endSale();
+      procedure enterItem(id: TItemID; quantity: integer);
+      procedure makeNewSale();
+      procedure makePayment(cashTendered: IMoney);
+      constructor Create(catalog: IProductCatalog);
+    end;
 
- type
-   IRegicter = interface
-    procedure endSale();
-    procedure enterItem(id: TItemID; quantity: integer);
-    procedure makeNewSale();
-    procedure makePayment(cashTendered: IMoney);
-  end;
-
-  TRegicter = class(TInterfacedObject, IRegicter)
-  private
-    catalog: IProductCatalog;
-    currentSale: ISale;
-  public
-    procedure endSale();
-    procedure enterItem(id: TItemID; quantity: integer);
-    procedure makeNewSale();
-    procedure makePayment(cashTendered: IMoney);
-    constructor Create(catalog: IProductCatalog);
-  end;
-
-implementation
+  implementation
 
 { Regicter }
 
@@ -42,7 +42,7 @@ procedure TRegicter.enterItem(id: TItemID; quantity: integer);
 var desc:IProductDescription;
 begin
   desc:=catalog.getProductDescription(id);
-  currentSale.makeLineItem(desc, quantity);
+  currentSale.makeLineItem(desc,quantity);
 end;
 
 procedure TRegicter.makeNewSale;

@@ -27,9 +27,9 @@ begin
 
 end;
 
-procedure TFasad.getStore;
+procedure TFasad.getStore();
 begin
-  store:=TStore.Create;
+  store := TStore.Create();
 end;
 
 end.

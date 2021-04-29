@@ -2,32 +2,34 @@ unit UStore;
 
 interface
 
- uses UProductCatalog, URegister;
+uses uproductdescription, UProductCatalog, URegister;
 
- type
-   IStore = interface
-    function getRegister(): TRegicter;
+type
+  IStore = interface
+    function getRegister(): IRegicter;
   end;
 
   TStore = class(TInterfacedObject, IStore)
   private
-    catalog: TProductCatalog;
-    regicter: TRegicter;
+    /// <link>aggregation</link>
+    catalog: IProductCatalog;
+    /// <link>aggregation</link>
+    regicter: IRegicter;
   public
+    function getRegister(): IRegicter;
     constructor Create();
-    function getRegister(): TRegicter;
   end;
 
 implementation
 
-{ Store }
+{ TStore }
 
 constructor TStore.Create;
 begin
 
 end;
 
-function TStore.getRegister: TRegicter;
+function TStore.getRegister: IRegicter;
 begin
   result:=regicter;
 end;

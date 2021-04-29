@@ -2,7 +2,7 @@ unit USalesLineItem;
 
 interface
 
-uses UProductDescription, UMoney;
+uses UMoney, UProductDescription;
 
 type
   ISalesLineItem = interface
@@ -21,17 +21,17 @@ type
 
 implementation
 
-{ TSalesLineItem }
+{ SalesLineItem }
 
-constructor TSalesLineItem.Create(desc: IProductDescription; quantity: Integer);
+constructor TSalesLineItem.Create(desc: IProductDescription; quantity: integer);
 begin
-   Self.description:=desc;
-   Self.quantity:=quantity;
+  Self.description:=desc;
+  Self.quantity:=quantity;
 end;
 
 function TSalesLineItem.getSubTotal: IMoney;
 begin
-   Result:=description.getPrice().times(quantity);
+  Result:=description.getPrice().times(quantity);
 end;
 
 end.

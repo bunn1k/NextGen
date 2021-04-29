@@ -1,6 +1,7 @@
 unit UMoney;
 
 interface
+
 type
   TMoney = class;
 
@@ -21,7 +22,6 @@ implementation
 
 { Money }
 
-
 procedure TMoney.add(value: IMoney);
 begin
 
@@ -39,7 +39,7 @@ end;
 
 function TMoney.times(quantity: integer): IMoney;
 begin
-   Result:=Self;
+  Result:=Self;
 end;
 
 end.

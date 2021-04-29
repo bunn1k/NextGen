@@ -1,8 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <nodeSet version="1.0">
-  <view uin="amql3yn9s4l_v">
+  <view uin="ysb6ee0c37s_v">
     <property name="$defaultDiagram" value="true" />
     <property name="$metaclass" value="Package Diagram" />
     <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Project1:URegister.TRegicter">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,145,190" />
+      <reference referencedUin="delphi:e_field:src:Project1:URegister.TRegicter.catalog" />
+      <reference referencedUin="delphi:e_field:src:Project1:URegister.TRegicter.currentSale" />
+      <reference referencedUin="delphi:e_method:src:Project1:URegister.TRegicter.endSale()" />
+      <reference referencedUin="delphi:e_method:src:Project1:URegister.TRegicter.enterItem(UItemID.TItemID,System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:Project1:URegister.TRegicter.makeNewSale()" />
+      <reference referencedUin="delphi:e_method:src:Project1:URegister.TRegicter.makePayment(UMoney.IMoney)" />
+      <reference referencedUin="delphi:e_method:src:Project1:URegister.TRegicter.Create(UProductCatalog.IProductCatalog)" />
+      <reference referencedUin="delphi:l_impl:src:Project1:URegister.TRegicter:URegister.IRegicter">
+        <property name="sourceAnchor" value="155,68" />
+        <property name="targetAnchor" value="174,68" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:URegister.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:URegister.IRegicter">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="174,1,106,126" />
+      <reference referencedUin="delphi:e_method:src:Project1:URegister.IRegicter.endSale()" />
+      <reference referencedUin="delphi:e_method:src:Project1:URegister.IRegicter.enterItem(UItemID.TItemID,System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:Project1:URegister.IRegicter.makeNewSale()" />
+      <reference referencedUin="delphi:e_method:src:Project1:URegister.IRegicter.makePayment(UMoney.IMoney)" />
+    </reference>
   </view>
 </nodeSet>

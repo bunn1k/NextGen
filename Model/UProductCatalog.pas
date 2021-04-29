@@ -28,19 +28,19 @@ var
   id1, id2: TItemID;
   price: IMoney;
   desc: IProductDescription;
-
 begin
-  id1:= TItemID.Create(100);
-  id2:= TItemID.Create(200);
-  price:= TMoney.Create(3);
-  desc:= TProductDescription.Create(id1, price, 'товар1');
+  id1 := TItemID.Create(100);
+  id2 := TItemID.Create(200);
+  price := TMoney.Create(3);
+  desc := TProductDescription.Create(id1, price, 'товар1');
   descriptions.Add(id1, desc);
-  desc:= TProductDescription.Create(id2, price, 'товар2');
+  desc := TProductDescription.Create(id2, price, 'товар2');
 end;
 
-function TProductCatalog.getProductDescription(id: TItemID): IProductDescription;
+function TProductCatalog.getProductDescription(id: TItemID)
+  : IProductDescription;
 begin
-  result:=descriptions[id];
+  result := descriptions[id];
 end;
 
 end.

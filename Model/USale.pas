@@ -2,8 +2,8 @@ unit USale;
 
 interface
 
-uses UProductDescription, UMoney, UPayment, UDate, USalesLineItem,
-  System.SysUtils, System.Generics.Defaults, System.Generics.Collections, System.Types;
+uses System.SysUtils, System.Generics.Defaults, System.Generics.Collections,
+  System.Types, UProductDescription, UMoney, USalesLineItem, UDate, UPayment;
 
 type
   ISale = interface
@@ -31,41 +31,40 @@ type
 
 implementation
 
-
-{ TSale }
+{ Sale }
 
 procedure TSale.becomeComplete;
 begin
-   isComplete:= true;
+  isComplete := true;
 end;
 
 function TSale.getBalance: IMoney;
 begin
-   result:=payment.getAmount().minus(getTotal());
+  result := payment.getAmount().minus(getTotal());
 end;
 
 function TSale.getTotal: IMoney;
 var
-   total, subtotal: IMoney;
-   lineItem: ISalesLineItem;
+  total, subtotal: IMoney;
+  lineItem: ISalesLineItem;
 begin
-   total:=TMoney.Create(0);
-   subtotal:=TMoney.Create(0);
-   for lineItem in LineItems do
-     begin
-       subtotal:=lineItem.getSubTotal();
-       total.add(subtotal);
-     end;
+  total := TMoney.Create(0);
+  subtotal := TMoney.Create(0);
+  for lineItem in LineItems do
+  begin
+    subtotal := lineItem.getSubTotal();
+    total.add(subtotal);
+  end;
 end;
 
 procedure TSale.makeLineItem(desc: IProductDescription; quantity: integer);
 begin
-   LineItems.add(TSalesLineItem.Create(desc, quantity));
+  LineItems.add(TSalesLineItem.Create(desc, quantity));
 end;
 
 procedure TSale.makePayment(cashTendered: IMoney);
 begin
-   payment:=TPayment.Create(cashTendered);
+  payment := TPayment.Create(cashTendered);
 end;
 
 end.

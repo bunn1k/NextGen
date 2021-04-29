@@ -1,10 +1,11 @@
 unit UCashier;
 
 interface
-type
- TCashier = class
 
- end;
+type
+  TCashier = class
+
+  end;
 
 implementation
 

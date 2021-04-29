@@ -1,10 +1,12 @@
 unit UCustomer;
 
 interface
-type
- TCustomer = class
 
- end;
+type
+  TCustomer = class
+
+  end;
+
 implementation
 
 end.

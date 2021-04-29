@@ -1,12 +1,13 @@
 unit UItemID;
 
 interface
-type
- TItemID = class
 
- public
-    constructor Create(id:integer);
- end;
+type
+  TItemID = class
+  public
+    constructor Create(id: integer);
+  end;
+
 implementation
 
 { ItemID }

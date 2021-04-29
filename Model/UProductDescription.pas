@@ -2,8 +2,7 @@ unit UProductDescription;
 
 interface
 
-uses
-  UItemID, UMoney;
+uses UItemID, UMoney;
 
 type
   IProductDescription = interface
@@ -26,30 +25,29 @@ type
 
 implementation
 
-
-{ TProductDescription }
+{ ProductDescription }
 
 constructor TProductDescription.Create(id: TItemId; price: IMoney;
   description: string);
 begin
-   Self.id := id;
-   Self.price:= price;
-   Self.description:= description;
+  Self.id := id;
+  Self.price := price;
+  Self.description := description;
 end;
 
 function TProductDescription.getDescription: string;
 begin
-   Result:=description;
+  Result:=description;
 end;
 
 function TProductDescription.getId: TItemId;
 begin
-   Result:=id;
+  Result:=id;
 end;
 
 function TProductDescription.getPrice: IMoney;
 begin
-   Result:=price;
+  Result:=price;
 end;
 
 end.

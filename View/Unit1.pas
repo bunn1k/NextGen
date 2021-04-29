@@ -3,9 +3,9 @@ unit Unit1;
 interface
 
 uses
-   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
-   System.Classes, Vcl.Graphics,
-   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, UFasad, Unit2;
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, UFasad, Unit2;
 
 type
   TForm1 = class(TForm)
@@ -14,10 +14,13 @@ type
     Button1: TButton;
     procedure FormCreate(Sender: TObject);
     procedure Button1Click(Sender: TObject);
+
   private
     /// <link>aggregation</link>
     fasad: IFasad;
+    { Private declarations }
   public
+
     { Public declarations }
   end;
 
@@ -35,7 +38,8 @@ end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-  fasad:=TFasad.Create();
+  fasad := TFasad.Create();
+
 end;
 
 end.

@@ -14,7 +14,7 @@ object Form2: TForm2
   PixelsPerInch = 96
   TextHeight = 13
   object Edit1: TEdit
-    Left = 384
+    Left = 264
     Top = 120
     Width = 121
     Height = 21
@@ -23,7 +23,7 @@ object Form2: TForm2
   end
   object Button1: TButton
     Left = 272
-    Top = 168
+    Top = 208
     Width = 75
     Height = 25
     Caption = 'Button1'

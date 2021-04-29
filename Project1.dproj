@@ -1,6 +1,6 @@
 ﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 		<PropertyGroup>
-			<ProjectGuid>{B5CBA40F-F0C4-458A-A5F7-3D4610152B41}</ProjectGuid>
+			<ProjectGuid>{D11BD47F-EC3F-4522-8862-F04157CCC165}</ProjectGuid>
 			<ProjectVersion>13.4</ProjectVersion>
 			<FrameworkType>VCL</FrameworkType>
 			<MainSource>Project1.dpr</MainSource>
@@ -87,19 +87,19 @@
 				<FormType>dfm</FormType>
 			</DCCReference>
 			<DCCReference Include="Model\USale.pas"/>
-			<DCCReference Include="Model\USalesLineItem.pas"/>
+			<DCCReference Include="Model\UCashPayment.pas"/>
+			<DCCReference Include="Model\UCustomer.pas"/>
+			<DCCReference Include="Model\URegister.pas"/>
+			<DCCReference Include="Model\UCashier.pas"/>
+			<DCCReference Include="Model\UItemID.pas"/>
 			<DCCReference Include="Model\ULedger.pas"/>
 			<DCCReference Include="Model\UProductCatalog.pas"/>
 			<DCCReference Include="Model\UProductDescription.pas"/>
-			<DCCReference Include="Model\UItemID.pas"/>
-			<DCCReference Include="Model\UStore.pas"/>
-			<DCCReference Include="Model\URegister.pas"/>
-			<DCCReference Include="Model\UCashPayment.pas"/>
-			<DCCReference Include="Model\UCustomer.pas"/>
-			<DCCReference Include="Model\UCashier.pas"/>
+			<DCCReference Include="Model\USalesLineItem.pas"/>
 			<DCCReference Include="Model\UPayment.pas"/>
 			<DCCReference Include="Model\UMoney.pas"/>
 			<DCCReference Include="Model\UDate.pas"/>
+			<DCCReference Include="Model\UStore.pas"/>
 			<DCCReference Include="Model\UFasad.pas"/>
 			<DCCReference Include="View\Unit2.pas">
 				<Form>Form2</Form>
@@ -120,13 +120,13 @@
 			<None Include="ModelSupport_Project1\URegister\default.txvpck"/>
 			<None Include="ModelSupport_Project1\USale\default.txvpck"/>
 			<None Include="ModelSupport_Project1\USalesLineItem\default.txvpck"/>
-			<None Include="ModelSupport_Project1\UStore\default.txvpck"/>
-			<None Include="ModelSupport_Project1\UPayment\default.txaPackage"/>
-			<None Include="ModelSupport_Project1\UPayment\default.txvpck"/>
-			<None Include="ModelSupport_Project1\UMoney\default.txaPackage"/>
 			<None Include="ModelSupport_Project1\UMoney\default.txvpck"/>
-			<None Include="ModelSupport_Project1\UDate\default.txvpck"/>
+			<None Include="ModelSupport_Project1\UPayment\default.txvpck"/>
 			<None Include="ModelSupport_Project1\UItemID\default.txvpck"/>
+			<None Include="ModelSupport_Project1\UItemID\default.txaPackage"/>
+			<None Include="ModelSupport_Project1\UDate\default.txvpck"/>
+			<None Include="ModelSupport_Project1\UStore\default.txvpck"/>
+			<None Include="ModelSupport_Project1\UStore\default.txaPackage"/>
 			<None Include="ModelSupport_Project1\UFasad\default.txvpck"/>
 			<None Include="ModelSupport_Project1\UFasad\default.txaPackage"/>
 			<None Include="ModelSupport_Project1\Unit2\default.txvpck"/>
