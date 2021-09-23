@@ -27,6 +27,7 @@ type
     procedure becomeComplete();
     procedure makeLineItem(desc: IProductDescription; quantity: integer);
     procedure makePayment(cashTendered: IMoney);
+    constructor Create();
   end;
 
 implementation
@@ -36,6 +37,11 @@ implementation
 procedure TSale.becomeComplete;
 begin
   isComplete := true;
+end;
+
+constructor TSale.Create;
+begin
+       LineItems:=TList<ISalesLineItem>.Create;
 end;
 
 function TSale.getBalance: IMoney;

@@ -4,5 +4,16 @@
     <property name="$defaultDiagram" value="true" />
     <property name="$metaclass" value="Package Diagram" />
     <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Project1:Unit2.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:Project1:Unit2.@unitclass.Form2" />
+      <reference referencedUin="delphi:l_ast:src:Project1:Unit2.@unitclass.Form2" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:Unit2.TForm2">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,112,113" />
+      <reference referencedUin="delphi:e_field:src:Project1:Unit2.TForm2.Edit1" />
+      <reference referencedUin="delphi:e_field:src:Project1:Unit2.TForm2.Button1" />
+    </reference>
   </view>
 </nodeSet>

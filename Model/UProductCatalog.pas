@@ -7,16 +7,16 @@ uses
 
 type
   IProductCatalog = interface
-    function getProductDescription(id: TItemID): IProductDescription;
+    function getProductDescription(id: integer): IProductDescription;
   end;
 
   TProductCatalog = class(TInterfacedObject, IProductCatalog)
   private
     Map: TDictionary<TItemID, IProductDescription>;
-    descriptions: TDictionary<TItemID, IProductDescription>;
+    descriptions: TDictionary<integer, IProductDescription>;
   public
     constructor Create();
-    function getProductDescription(id: TItemID): IProductDescription;
+    function getProductDescription(id: integer): IProductDescription;
   end;
 
 implementation
@@ -25,19 +25,20 @@ implementation
 
 constructor TProductCatalog.Create;
 var
-  id1, id2: TItemID;
+  id1, id2: integer;
   price: IMoney;
   desc: IProductDescription;
 begin
-  id1 := TItemID.Create(100);
-  id2 := TItemID.Create(200);
+  descriptions:=TDictionary<integer, IProductDescription>.create;;
+  id1 := 100;
+  id2 := 200;
   price := TMoney.Create(3);
   desc := TProductDescription.Create(id1, price, 'товар1');
   descriptions.Add(id1, desc);
   desc := TProductDescription.Create(id2, price, 'товар2');
 end;
 
-function TProductCatalog.getProductDescription(id: TItemID)
+function TProductCatalog.getProductDescription(id: integer)
   : IProductDescription;
 begin
   result := descriptions[id];

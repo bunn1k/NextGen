@@ -26,12 +26,13 @@ implementation
 
 constructor TStore.Create;
 begin
-
+  catalog := TProductCatalog.Create;
+  regicter := TRegicter.Create(catalog);
 end;
 
 function TStore.getRegister: IRegicter;
 begin
-  result:=regicter;
+  result := regicter;
 end;
 
 end.

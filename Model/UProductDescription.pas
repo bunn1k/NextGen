@@ -6,28 +6,28 @@ uses UItemID, UMoney;
 
 type
   IProductDescription = interface
-    function getId: TItemId;
+    function getId: integer;
     function getPrice: IMoney;
     function getDescription: string;
   end;
 
   TProductDescription = class(TInterfacedObject, IProductDescription)
   private
-    id: TItemId;
+    id: integer;
     price: IMoney;
     description: string;
   public
-    function getId: TItemId;
+    function getId: integer;
     function getPrice: IMoney;
     function getDescription: string;
-    constructor Create(id: TItemId; price: IMoney; description: string);
+    constructor Create(id: integer; price: IMoney; description: string);
   end;
 
 implementation
 
 { ProductDescription }
 
-constructor TProductDescription.Create(id: TItemId; price: IMoney;
+constructor TProductDescription.Create(id: integer; price: IMoney;
   description: string);
 begin
   Self.id := id;
@@ -40,7 +40,7 @@ begin
   Result:=description;
 end;
 
-function TProductDescription.getId: TItemId;
+function TProductDescription.getId: integer;
 begin
   Result:=id;
 end;
